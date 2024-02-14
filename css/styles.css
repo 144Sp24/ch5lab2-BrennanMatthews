@@ -5,7 +5,7 @@ File Name: styles.css
 */
 
 /* CSS Reset */
-body, header, nav, main, footer, img, h1, h3 {
+body, header, nav, main, footer, img, h1, h3, ul {
     margin: 0;
     padding: 0;
     border: 0;
@@ -21,6 +21,27 @@ img {
     display: block;
 }
 
+/* Style rules for mobile viewport */
+.mobile {
+    display:block;
+}
+
+/* Style rules to show mobile class and hide tab-desk class */
+.tablet-desktop {
+    display: none;
+}
+
+/* Style rules for header area */
+h1 {
+    padding: 2%;
+    font-family: "Emblema One", system-ui;
+}
+
+h3{
+    padding: 2%;
+    font-family: "Lora", serif;
+}
+
 /* Style rules for navigation area */
 nav {
     background-color: #2a1f14;
@@ -28,8 +49,10 @@ nav {
 
 nav ul {
     list-style-type: none;
-    margin: 0;
     text-align: center;
+    display:block;
+    border-top: 0.5px;
+    border-color: #f6eee4;
 }
 
 nav li {
@@ -49,7 +72,7 @@ nav li a {
 /* Style rules for main content */
 main {
     padding: 2%;
-    font-family: Verdana, Arial, sans-serif;
+    font-family: "Lora", serif;
 }
 
 main p {
@@ -77,8 +100,34 @@ main ul {
     text-align: center;
 }
 
+.round {
+    border-radius: 6px;
+}
+
+#info ul {
+    margin-left: 10%;
+}
+
+id {
+    text-align: center;
+}
+
 #contact {
     text-align: center;
+}
+
+.tel-link {
+    background-color: #2a1f4;
+    padding: 2%;
+    width: 80%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.tel-link class {
+    color: #f6eee4;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 /* Style rules for footer content */
